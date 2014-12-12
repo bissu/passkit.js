@@ -1,0 +1,28 @@
+{
+  "name": "passkit.js",
+  "version": "0.0.1",
+  "description" : "A NodeJS application for Passbook provision.",
+  "author" : "Marcelo Bissuh <bissuh@gmail.com>",
+  "scripts" : {
+    "start" : "node app.js"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/bissu/passkit.js"
+  },
+  "bugs" : {
+    "url" : "https://github.com/bissu/passkit.js/issues"
+  },
+  "keywords" : [
+    "passbook",
+    "nodejs",
+    "apple"
+  ],
+  "dependencies" : {
+    "express" : "~4.0.0",
+    "node-forge" : "~0.6.18",
+    "adm-zip" : "~0.4.4",
+    "atob" : "1.1.2",
+    "async" : "~0.9.0"
+  }
+}
