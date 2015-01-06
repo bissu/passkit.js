@@ -6,7 +6,7 @@ var async = require('async');
 
 module.exports = {
 
-	"createPass" : function(certificates, imageFiles, template, passName, tempPath, debug) {
+	"createPass" : function(certificates, imageFiles, template, passName, tempPath, returnPassbookPath) {
 
 		// Define pathes
 		var uniquePassId  = Date.now() + Math.random();
@@ -31,6 +31,8 @@ module.exports = {
 			});
 
 			zipFile.writeZip(PKPassPath);
+
+			returnPassbookPath(PKPassPath);
 		}
 
 		function createSignature(certificates, manifestPath, signaturePath) {

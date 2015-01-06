@@ -58,7 +58,6 @@ module.exports = {
 		url = id ? url + "/" + id : url;              // Adding ID
 		url = resource ? url + "/" + resource : url;  // Adding resource
 		url = url + signature;                        // Adding signature
-		console.log(url);
 
 		https.get(url, function(res) {
 
